@@ -1,0 +1,16 @@
+Undefined
+
+'Not defined' and 'undefined' are not the same thing.
+
+Undefined is a special value that means that the variable hasn't been set. 
+
+Not defining can give an 'Uncaught reference error: a is not defined'
+It's not in memory. 
+
+If you declare the variable but do not set it, you will not get the error.
+
+Should not do:
+
+a = undefined
+
+Better to let it never be set. Would make it hard to debug. Would be  hard to tell if you set it to that, or the engine did and you have never set it.

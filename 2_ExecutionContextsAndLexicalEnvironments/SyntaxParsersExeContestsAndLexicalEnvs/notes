@@ -1,0 +1,24 @@
+
+Syntax Parsers:
+ A program that reads your code and determines if its grammar (or syntax) is valid
+
+Execution Contexts:
+ A wrapper to help manage the code that is running
+
+ - Base is the Global Execution Context (there can be a few contexts run
+
+ - Creates a Global Object (means not inside a function) and 'this.' 
+
+ - In the browser, the Global Object = the Window = 'this.' 
+
+ - Inside Execution Context also exists Outer Environment (which is null at Global level, because nothing exists outside it), and Code.
+
+Lexical Environments:
+ Where something sits physically in the code you write.
+
+
+Name/Value Paris & Objects:
+ Can only have one value in any given context, but a name can have more value/pairs.
+
+Object: 
+ Collection of Name/Value Pairs (like JSON (says me))

@@ -1,9 +1,11 @@
-b();
-
-console.log(a);
-
-var a = 'Hello World!';
+function a() {
+	b();
+	var c;
+}
 
 function b() {
-    console.log('Called b!');
+	var d;
 }
+
+a();
+var d;

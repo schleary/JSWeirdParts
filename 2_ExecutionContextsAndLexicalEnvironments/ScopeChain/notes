@@ -1,0 +1,39 @@
+The Scope Chain
+
+function b() {
+	// 1
+	console.log(myVar);
+}
+
+function a() {
+	var myVar = 2;
+	b();
+}
+
+var myVar = 1;
+a();
+
+What will we see first when we run this code?
+1;
+
+
+Why?
+
+We also have a reference to the Outer Environment and 'this'
+
+
+Outer Environment Reference:
+ 
+Lexical Enviroment: 
+ Where something is written in y our code is important.
+ Determines where things will live and sit in memory and connect to each other.
+
+JavaScript cares about the lexical environment when it comes to the outer reference that every execution context gets. 
+
+If it can't find the vvariable, it will look in the Outer Reference, which depends on where the reference sits lexically.
+
+In this specific, b and a Outer Environment are both global.
+
+It doesn't matter where the functions are physically written. But when you invoke a function, JS creates an outer reference, and the parser knows where that function was written in, so it creates that physical reference, based on where it was written in the file.
+
+This could get tall, and myVar could be way out there. It can keep moving down until it hits global and finds it or doesn't. This is the scope chain.  Links of Outer Environment references.

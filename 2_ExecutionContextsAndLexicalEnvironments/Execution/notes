@@ -1,0 +1,51 @@
+
+Execution Context is Created in Two Phases:
+1) Creation Phase
+ - Global Obj in memory
+ - 'this' in memory
+ - Outer environment
+ - Setup Memory Space for Variables & Functions (HOISTING)
+
+2) Runs your Code
+ - Line by line (in order now)
+
+
+
+
+JavaScript is Single-threaded Synchronous Execution:
+
+ Single-Threaded:
+
+  One command is being executed at a time, 
+  under the hood of the browser, maybe not.
+
+
+ Synchronous:
+
+  One at a time, and in order
+
+
+Function Invocation and the Execution Stack:
+
+
+ Invocation:
+ 
+   Running a function, in JavaScript, by using parentheses
+
+
+ Exeution Stack
+
+  Whichever one is on top is the onne that's currently running
+
+ A new execution Context is created and placed on the Execution Stack.
+ Whichever is on top is the one that's currently running.
+
+ Execution Context operates exactly like the global one.
+
+ But if you have another line of invocation, it stops and 
+
+ Every function creates a new execution context, which does all the things
+
+ Then when that new one finishes, it pops off the stack, and we go back down to b. 
+
+

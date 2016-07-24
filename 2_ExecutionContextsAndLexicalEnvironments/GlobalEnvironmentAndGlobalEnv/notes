@@ -1,0 +1,61 @@
+Global Environment and the Global Object
+
+When code is run, it's run inside an Execution Context
+
+Execution Context:
+ - A wrapper inside the JS Engine that wraps code you've written in an execution context
+
+  Created by the JS Engine
+
+BASE (GLOBAL) Execution Context:
+ Many execution contexts are run at once, but the BASE is the global execution context
+
+ Global is accessible to everything
+
+ Global/base context creates 2 things for you:
+  - Global Object
+  - Creates 'this'
+
+  	- Is created when you launch the file, regardless of whether there is any code:
+   - will create 'this' and 'window' in the Browser
+   - separate this and windows in separate browsers
+
+   Global object is the window, and creates 'this'
+   Global Object = 'this'
+   Calling the global window object will give you 'this'
+
+
+ Global: Not inside a function
+
+ 	When you create variables and functions that are not inside a function, they are attached to the global object
+
+ 	so:
+
+ 	a = hello world
+ 	also
+ 	window.a = hello world
+
+
+Execution Context (wrapper you didn't write, for all these things):
+	- Global Object
+	- this/window object
+	- Outer Environment Link
+	- Your Code (Will sit on the global object, if code is not itself inside a function)
+
+
+Outer Environment
+ At global level, this is null, because you can't get any more outside than global.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
