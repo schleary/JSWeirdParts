@@ -1,1 +1,23 @@
 Asynchronous Callbacks
+
+Asynchronous: 
+ More than one at a time
+
+JS itself is synchronous
+
+
+The Browser
+ All of these things together are running asynchronously inside the browser:
+	 - The JavaScript Engine ->
+	 - The Rendering Engine ->
+	 - HTTP Request (getting data)
+
+ But the JavaScript Engine itself is running synchronously.
+
+
+
+Event Queue:
+ Full of events, notifications of events that might be happening. When the browser has an event inside the javascript engine that we want ot be notified of, it gets placed on the queue, regardless of whether we have a function that needs to respond to it. We can listen for that event and have that event handles (like a click event, when someone clicks on the screen). Or there can also be an HTTP request with data come back. These events wait for the stack to empty, then JS will look at the Wait Queue, and then process the click event in maybe a clickHandler(); 
+
+ The Event Queue won't be processed until the Stack is empty. When the Execution Contexts are all finished/gone. (So not REALLY asynchronous. It waits.)
+

@@ -1,0 +1,183 @@
+Types and JavaScript
+
+Dynamic Typing: You don't tell the engine what type of data a variable holds. It figures it out while your code is running. Variables can hold different types of Variablesalues, because it's all figured out during execution.
+
+JavaScript
+
+  Dynamic Typing:
+    var isNew = true; // new errors
+    isNew = 'yup'; 
+     = 1;
+
+Other Languages:
+
+  Static Typing:
+  
+    bool isNew = 'hello' //error
+
+
+Primitive Type:
+ A type of data that represents a single value, that is, not an object. 
+
+There are 6 primitive types in JavaScript:
+
+  - Undefined: represents lack of existence (you shouldn't use this)
+
+  - Null: Also represents a lack of existence (you can set a variable to this)
+
+  - Boolean: true or false
+
+  - Number: Floating point number (there's always some decimals). UNlike other programing languages that have ints and decimals and floats, JS only has one number type, and it can make math weird.
+
+  - String: a sequence of characters, and both ' and " can be used. Is considered primitive in JS
+
+  - Symbol: New in ES6, not supported in all browsers. We won't discuss here. 
+
+
+
+----------------
+
+
+Operators
+ A special function that is syntactically (written) differently. Generally, operators take two parameters and return one result.
+
+The '+' symbol, for example, operates like so:
+
+function +(a, b) {
+  return // add the two numbers
+}
+
+But instead of typing:
+
++(3, 4) 
+
+to call your functions, you can use Infix Notation (operator sits between two parameters)
+
+Prefix notation: + 3 4
+Postfix notation: 3 4+
+Infix Notation (JS): 3 + 4
+
+
+
+Operator Precedence and Associativity
+
+  Operator Precedence: Which operator function gets called first (higher precedence wins)
+
+  Associativity: What order operator functions get called in: left-to-right or right-to-left (when functions have the saem precedence)
+
+  Assignment is right-to-left, so:
+  a = 1
+  b = 2
+  c = 3
+
+  a = b = c; 
+  so it sets b = c first.
+  sets b = to the value in memory of c.
+  then a is set to b in the same fashion.
+  a is 3.
+  all are 3.
+
+
+
+Coercion:
+ Converting a value from one type to another. Happens a lot in JS because it's dynamically typed.
+
+ var a = 1 + '2'
+ returns 12
+ because it coerces the 1 into a '1'
+
+
+
+
+Comparison Operators
+
+ console.log(1 < 2 < 3);
+ //true
+
+
+ console.log(3 < 2 < 1);
+ //also true. why?
+
+ 3 < 2 = false
+ false < 1
+ coerces false to number
+
+ Number(false); //0
+ Number(true);  //1
+
+ So:
+ 0 < 1; //true!
+
+ So:
+ 3 < 2 < 1 = true (though false, simply because it evaluates left-to-right associativity of <)
+
+
+ Number(undefined); //NaN
+
+ NaN = not a number. No way to convert to a number
+
+ Number(null); //0
+
+Can cause a lot of strange bugs and pproblems. Coersion is powerful, but can be dangerous.
+
+
+Equality:
+
+ == , !=
+
+ 3 == 3; //true
+ '3' == 3; //true Coerced, and then checked equality
+
+ false == 0; //true
+
+ null == 0; //false (even though it coerces to 0, it doesn't compare to 0)
+
+ "" == 0 //true
+
+ "" == false //true
+
+Strict Equality
+
+ ===, !==
+
+ Compares two things to a standard operator, but doesn't try to coerce. Will just say false.
+
+ 3 === 3; //true
+ "3" === "3"; //true
+ 3 === "3"; //false
+
+ Best to use. Dont' use == unless you explicitly want to coerce. Use ===.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
