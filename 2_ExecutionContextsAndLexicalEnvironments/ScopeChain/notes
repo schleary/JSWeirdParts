@@ -37,3 +37,56 @@ In this specific, b and a Outer Environment are both global.
 It doesn't matter where the functions are physically written. But when you invoke a function, JS creates an outer reference, and the parser knows where that function was written in, so it creates that physical reference, based on where it was written in the file.
 
 This could get tall, and myVar could be way out there. It can keep moving down until it hits global and finds it or doesn't. This is the scope chain.  Links of Outer Environment references.
+
+Think about when the function is created, and when its contextual environment is created in the chain.
+
+
+---------------------------------------------------
+
+
+Scope, ES6, and let
+
+
+Scope:
+ Where a variable is available in your copy, and if it's truly the same variable, or a new copy
+
+
+let:
+ Can be used instead of var.
+ Lets JS engine use block scoping.
+
+ variable still places in memory and set to defined, 
+ but you can't use it before it's defined
+
+ Declared inside a block, and only available inside that block, for that period of running code. A let statement in a for loop will be a different variable in memory each time the loop is running. Allows for Block Scoping. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

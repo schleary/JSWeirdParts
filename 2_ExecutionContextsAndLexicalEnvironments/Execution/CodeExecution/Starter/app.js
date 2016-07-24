@@ -1,9 +1,17 @@
+function b() {
+    console.log('Called b!');
+}
+
 b();
 
 console.log(a);
 
 var a = 'Hello World!';
 
-function b() {
-    console.log('Called b!');
-}
+console.log(a);
+
+// you should see:
+
+// 'Called b!'
+// undefined
+// 'Hello World!'
