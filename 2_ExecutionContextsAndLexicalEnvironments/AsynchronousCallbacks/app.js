@@ -15,3 +15,9 @@ document.addEventListener('click', clickHandler);
 
 waitThreeSeconds();
 console.log('finished execution');
+
+
+// Should execute in the following order:
+// finished function
+// finished execution
+// click event
