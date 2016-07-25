@@ -151,7 +151,19 @@ Strict Equality
 
 
 
+Existence and Booleans
+----------------------
+Boolean(undefined); //false
+Boolean(null); //false
+Boolean(""); //false
+Boolean(0); //false
 
+Lack of existence converts to false
+
+
+
+Default Values
+---------------
 
 
 
