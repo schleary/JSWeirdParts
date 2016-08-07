@@ -1,0 +1,3 @@
+var person = {};
+
+console.log(person); //Wil just log Object

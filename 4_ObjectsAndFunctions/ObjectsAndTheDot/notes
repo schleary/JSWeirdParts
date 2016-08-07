@@ -1,0 +1,10 @@
+Objects and the Dot
+
+Objects are collections of key-value pairs
+
+Objects can have properties (like 'primitive') and methods
+
+Objects can also contain functions (methods)
+
+These sit in memory, which may be related to the address
+
