@@ -1,0 +1,14 @@
+First Class Functions
+Everything you can do with other types (strings, etc.), you can do with functions
+Can assign variables, pass them arounc, create them on the fly.
+
+Function is a special type of obj and resides in memory
+
+You can attach properties and methods to functions
+- Primitive
+- Object
+- Function
+
+Properties:
+ - Name: can be anonymous
+ - CODE: invocable
