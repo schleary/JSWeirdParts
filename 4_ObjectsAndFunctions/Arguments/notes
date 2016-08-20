@@ -1,12 +1,22 @@
-Expression: A unit of code that results in a value
+Arguments and Spread:
 
-It doesn't have to be a variable
+'arguments':
+ probably not used much in new JS
+
+Spread used more in new JS
 
 
-FUNCTION EXPRESSIONS AREN'T HOISTED:
-anonGreet(); 
-var anonGreet = function() {
-	console.log('hi');
-}
+Execution OCntext is Created with:
+ - variable env
+ - this
+ - outer env
+ - arguments
 
-will fail!
+
+Arguments: parameters you pass to a function
+
+ - JS gives you a keyword of same name that contains them all
+
+
+You don't HAVE to pass the parameters in a fn that takes them
+ - will just make them undefined.
