@@ -1,0 +1,12 @@
+Expression: A unit of code that results in a value
+
+It doesn't have to be a variable
+
+
+FUNCTION EXPRESSIONS AREN'T HOISTED:
+anonGreet(); 
+var anonGreet = function() {
+	console.log('hi');
+}
+
+will fail!

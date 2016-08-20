@@ -1,0 +1,23 @@
+By Value, By Reference
+
+Primitive Value (by value)
+ a = 3
+ setting a references a memory location
+
+ b = a
+
+ copy of primitive value in another space in memory
+
+
+Object (by reference)
+ a = 3
+
+ b = a (or pass to a function)
+
+Both a and b point to the same location in memory
+
+ALL OBJECTS ACT BY REFERENCE
+
+
+Mutate - to be changed
+Immutable - can't be changed

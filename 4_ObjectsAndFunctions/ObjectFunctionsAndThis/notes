@@ -1,0 +1,17 @@
+Objects, Functions, and 'this'
+
+When a function is invoked, a new execution context is created (CREATION PHASE)
+
+Each execution has:
+ - Variable Environment
+ - Outer Environment (all the way to global)
+ - 'this' (points at different things depend on:
+ 		where the function is
+ 		how the funciton is invoked
+ 		)
+
+ 
+
+
+
+
