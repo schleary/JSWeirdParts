@@ -1,13 +1,24 @@
-Dangerous Aside:
+Closures
 
-Semicolons are optional
+What happens? 
+- Global Execution Context
+- Execution Contect
 
-Characters analyzed character by character by JS syntax parser
+
+// The 'Hi' just hangs around somehow
 
 
-return v (with return character will auto-place a semi-colon)
+function greet(whatToSay) {
+	return funtion(name) {
+		cosole.log(whatToSay + ' ' + name)
+	}
+}
 
-auto semi-colon insertion can cause probs
+//invoking a function that returns a function so you can invoke the function that was returned
+greet('Hi')('Tony'); 
+
+// now sayHi is a function
+var sayHi = greet('Hi')('Tony'); //logs Hi Tony
 
 
 
