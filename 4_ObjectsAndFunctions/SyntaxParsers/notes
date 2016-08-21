@@ -1,0 +1,5 @@
+Syntax Parsers:
+
+Reads your code & determines whether it's valid
+
+The JS engine reads your code character by character and decides what it intends.
