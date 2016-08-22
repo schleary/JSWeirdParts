@@ -1,13 +1,1 @@
-Dangerous Aside:
-
-Semicolons are optional
-
-Characters analyzed character by character by JS syntax parser
-
-
-return v (with return character will auto-place a semi-colon)
-
-auto semi-colon insertion can cause probs
-
-
-
+Functional Programming
