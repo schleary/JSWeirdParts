@@ -1,13 +1,7 @@
-Dangerous Aside:
+Callback Function:
 
-Semicolons are optional
+A function you give to another fucntion, to be run when the other function is finished
 
-Characters analyzed character by character by JS syntax parser
-
-
-return v (with return character will auto-place a semi-colon)
-
-auto semi-colon insertion can cause probs
-
+SO the function you call (i.e. invoke), 'calls back' by calling the function you gave it when it finishes
 
 
