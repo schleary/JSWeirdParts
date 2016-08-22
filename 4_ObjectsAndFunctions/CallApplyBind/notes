@@ -1,13 +1,24 @@
-Dangerous Aside:
+Call()
 
-Semicolons are optional
+Apply()
 
-Characters analyzed character by character by JS syntax parser
-
-
-return v (with return character will auto-place a semi-colon)
-
-auto semi-colon insertion can cause probs
+Bind()
 
 
+Function
 
+	- Name (optional, can be anonymous)
+
+	- Code (invokable)
+
+	- 3 methods (all deal w/ 'this' and values passed:
+
+	 	- call()
+	 	- apply()
+	 	- bind()
+
+
+
+Function Currying:
+
+ Creating a copy of a function but with some preset parameters
