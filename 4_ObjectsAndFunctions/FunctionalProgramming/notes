@@ -1,1 +1,3 @@
-Functional Programming
+Functional Programming:
+
+Be careful not to mutate data as you pas it around. Just return something NEW.

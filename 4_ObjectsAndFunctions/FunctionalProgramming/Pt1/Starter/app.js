@@ -47,3 +47,38 @@ var arr3 = mapForEach(arr1, function(item) {
 }); 
 
 console.log(arr3); // [false, false, true]
+
+
+
+// when you want to override a preset parameter:
+var checkPastLimit = function(limiter, item) {
+	return item > limiter;
+}
+
+// bind creates a copy
+// 'this' is whatever this is; 1 is the limiter
+var arr4 = mapForEach(arr1, checkPastLimit.bind(this, 1));
+
+console.log(arr4);
+
+
+
+//but, it's annoying to call bind all the time. 
+// can we create a function that passed limiter as ony parameter
+// and it gives back a function like something like checkPastLimit.bind(this, 1)
+var checkPastLimitSimplified = function(limiter) {
+	return function(limiter, item) {
+		return item > limiter;
+	}.bind(this., limiter);
+};
+
+var arr5 = mapForEach(arr1, checkPastLimitSimplified);
+console.log(arr5); // [false, false, true];
+
+
+
+
+
+
+
+
