@@ -29,6 +29,8 @@ for (var prop in john) {
  //     return this.firstname + ' ' + this.lastname;  
  // }
 
+
+
 var jane = {
     address: '111 Main St.',
     getFormalFullName: function() {
@@ -42,7 +44,10 @@ var jim = {
     }
 }
 
-_.extend(john, jane, jim);
+// underscore library 
+// composes/combines objects and adds them directly to john object
+// This does not put it on the prototype chain.
+_.extend(john, jane, jim); // composistion
 
 console.log(john);
 
