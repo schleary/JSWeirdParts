@@ -1,2 +1,7 @@
-Function Factories
+Reflection and Extend
 
+Reflection:
+
+ An object can look at itself, listing and changing its properties and methods
+
+ Utilizes a useful method called Extend

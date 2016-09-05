@@ -1,2 +1,16 @@
-Function Factories
+Classical vs Prototypal Inheritance
+
+
+Inheritance: 
+ One object gets access to the properties and methods of another object
+
+
+Classical Inheritance:
+ Verbose
+
+
+Prototypal INheritance
+ Simple
+  flexible, extensible, easy to understand
+
 

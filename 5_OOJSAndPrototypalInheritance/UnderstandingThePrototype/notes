@@ -1,2 +1,46 @@
-Function Factories
+Understanding the Prototype
 
+Object
+ - has:
+ 	- properties
+ 	- methods
+
+ 	- prototype property {}
+ 		- has its own properties
+ 		- can have its own prototypes
+
+Object has an object called proto {}
+which has its own property, like prop2
+
+ 	obj.prop1
+ 	obj.prop3  // 
+
+ 	Looks down the scope chain
+
+
+ Objects can share prototypes
+
+ Each obj can have its own prototype
+
+ and each prototype can have its own prototype
+
+ and each of these prototypes can have properties
+
+ This is called a prototype chain
+
+ And even though prop 3 may be way down the chain, 
+
+ you can just say obj.prop3
+
+ And it goes all the way down
+
+
+
+ Interesting:
+ If you have another obj2, it can point to the same prototype, and
+
+ return the same 
+
+ obj2.prop3
+
+ They share and are pointing to the same place (if you want)

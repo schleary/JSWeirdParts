@@ -1,2 +1,20 @@
-Function Factories
+Evverything is an Object (or Primitive - number, string, boolean)
+
+
+var a = {};
+var b = function() {};
+var c = [];
+
+a.__proto__ //returns Object {} - base object
+  has access to toString() etc.
+
+b.__proto__ // returns Empty() {}
+  has access to valueOf() etc.
+
+c.__proto__ // returns []
+  has access to push()
+
+
+
+Object {} = bottom of prototype chain
 
