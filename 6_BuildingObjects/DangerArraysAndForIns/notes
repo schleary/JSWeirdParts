@@ -1,0 +1,16 @@
+Danger: Arrays and For-Ins:
+
+Array.prototype.myCustomFeature = 'cool';
+
+var arr = ['John', 'Jane', 'Jim'];
+
+for (var prop in arr) {
+	console.log(arr[prop]);
+}
+
+// each item is a property
+// will iterate into the property
+
+
+Don't use for in for Arrays!
+Use a standard for loop instead!

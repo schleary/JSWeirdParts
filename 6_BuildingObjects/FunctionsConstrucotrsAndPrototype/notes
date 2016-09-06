@@ -1,0 +1,26 @@
+Function Constructors and '.prototype'
+
+Any time you create a function object, it comes with
+
+
+
+Function - a special type of object. Has:
+
+ - Name (optional, can be anonymous)
+ - Code (invokable)
+ - Prototype (used only by 'new' operator)
+   - of object created, not of the function itself
+
+
+
+Danger: 'new' and functions:
+
+If you forget the 'new' keyword, it still executes the function 
+and if you aren't returning anything, it'll return undefined, 
+which can cause an error
+
+When you intend a function to be a function constructor, 
+name the function with a capital letter. 
+This can remind you to use 'new
+
+BUT, function constructors will probably disappear soon.

@@ -1,0 +1,4 @@
+Object.create and Pure Prototypal Inheritance
+
+Polyfill:
+Code that adds a feature that the engine may lack

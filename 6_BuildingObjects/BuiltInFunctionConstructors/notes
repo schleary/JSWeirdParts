@@ -1,0 +1,49 @@
+Built-In Function Constructors:
+
+var a = new Number(3);
+// Number {[[Primitive]]: 3}
+Number.prototype. all kinds of stuff
+
+var a = new String("John");
+String.prototype. 
+// so you can do all kinds of stuff with a
+a.indexOf("o");
+
+a
+//returns:
+String {0: "J", 1: "o", 2: "h", 3: "n", length: 4, isLengthGreaterthan: function, [[PrimitiveValue]]: "John" }
+
+// All of these properties are not actually on object a, 
+// but on the String.prototype
+
+Look like you're creating primitives, but you're not
+You're creating objects that contain primitives
+and give them extra abilities
+
+But sometimes JS wraps the primitive in the String object so you can do:
+"John".length = 4
+Same as:
+var a = new String("John");
+a.length;
+
+You're really converting the string to an object
+
+
+
+Danger:
+Be careful with conversions and comparisons!!
+Dangerous to use them for primitives. 
+
+var a = 3;
+var b = new Number(3);
+a == b; //true
+a === b; // false
+
+If using Date constructor, use Moment.js
+
+
+
+
+
+
+
