@@ -163,7 +163,11 @@ Lack of existence converts to false
 
 
 Default Values
----------------
+--------------
+
+
+Framework: Grouping of JS code that performs a task that is intended to be reusable
+
 
 
 

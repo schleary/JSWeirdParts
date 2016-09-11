@@ -3,7 +3,16 @@
         
     </head>
     <body>
+   <!--  stacking the code on top of each other (not new exe contexts)
+    but often, we combine or minify into one file anyway
+    so we need to make sure that these files do not collide with one another -->
+    <!-- All treated as global variables sitting in global execution context.
+    so the second var just replaces the first library name
+    You can accidentally collide with other libraries
+    (So, see Lib2) -->
 
+    	<script src="lib1.js"></script>
+    	<script src="lib2.js"></script> 
         <script src="app.js"></script>
     </body>
 </html>
